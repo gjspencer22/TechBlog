@@ -20,8 +20,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  // check the session
-  // if (req.session) {
     Contribution.create({
       contribution_text: req.body.contribution_text,
       story_id: req.body.story_id,
